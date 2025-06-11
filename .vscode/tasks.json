@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "-d", "bin",
+        "${workspaceFolder}/src/main/java/com/example/project/*.java"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "run",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp", "bin",
+        "com.example.project.Main"
+      ],
+      "dependsOn": ["build"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

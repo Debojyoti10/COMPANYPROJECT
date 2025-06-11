@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+        "type": "java",
+        "name": "Main",
+        "request": "launch",
+        "mainClass": "main.java.com.example.project.Main",
+        "projectName": "CompanyProject_5d8f7ab"
+    },
+    {
+        "type": "java",
+        "name": "Debug Main",
+        "request": "launch",
+        "mainClass": "com.example.project.Main",
+        "projectName": "CompanyProject"
+    }
+]
+}
